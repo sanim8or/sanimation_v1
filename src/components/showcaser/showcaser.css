@@ -1,0 +1,117 @@
+.projectContainer-master {
+  display: grid;
+  gap: 15px;
+  grid: 1fr /1fr 1fr;
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.projectContainer-itemMaster {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  justify-self: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.projectContainer-itemMaster:hover {
+  transform: translateY(-5px);
+}
+
+.contentHolder {
+  /* background: -webkit-linear-gradient(transparent, #ec2755ab); */
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+
+.contentHolder p {
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 10px;
+  border-bottom-color: white;
+}
+
+.projectContainer-itemMaster:hover .contentHolder {
+  transform: translateY(-15px);
+}
+
+.textboxAnimated {
+  transition: 1s;
+  position: absolute;
+  height: 30px;
+  width: 300%;
+  opacity: 0.6;
+  background-color: var(--color-pink);
+  z-index: -1;
+  transform: rotate(0);
+}
+.projectContainer-itemMaster:hover .textboxAnimated {
+  transform: rotate(10deg);
+  transform: scaleY(5);
+}
+.projectContainer-itemMaster:active {
+  transform: translateY(0px);
+}
+.imgHolder {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  transition: 1s;
+}
+.projectContainer-itemMaster:hover .imgHolder {
+  transform: scale(1.2);
+}
+
+.condition_Text {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin: 25px 0;
+  pointer-events: none;
+}
+
+.light-effect-anim1s {
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media only screen and (max-width: 3000px) {
+  .projectContainer-master {
+    grid: 1fr /1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .projectContainer-master {
+    grid: 1fr /1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .projectContainer-master {
+    grid: 1fr /1fr;
+  }
+}

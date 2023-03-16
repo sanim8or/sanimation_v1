@@ -1,0 +1,181 @@
+.gridMaster {
+  display: grid;
+  grid-area: matrixGrid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.gridItem {
+  aspect-ratio: 14/10;
+  background-color: var(--text-grey);
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gridItem span {
+  display: flex;
+  align-self: center;
+  color: var(--text-lightGrey);
+  text-align: center;
+}
+
+.gridItem:hover {
+  transform: scale(1.05);
+  background-color: var(--color-lightPink);
+}
+.gridItem:active {
+  transform: scale(1);
+  background-color: var(--color-pink);
+}
+.slctdMatrix {
+  background-color: var(--color-pink);
+}
+.slctdMatrix:hover {
+  transform: scale(1);
+  background-color: brown;
+}
+.matrixInputContainer {
+  display: grid;
+  grid: 1fr/1fr 2fr;
+  padding: 10px;
+}
+.button {
+  transition: 0.2s;
+  background-color: var(--color-pink);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+.button:active {
+  transform: scale(0.95);
+}
+.titleANDfieldContainer {
+  display: grid;
+  grid: 1fr/0.4fr 1fr;
+  padding: 0 10px;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.inputWrapper {
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+}
+.freelanceResultContainer {
+  background-color: aqua;
+  display: grid;
+  grid: 800px/ 0.4fr 1fr;
+}
+.nameListWrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 10px;
+}
+/* SECONDARY SKILLS ONLY */
+.selectedSecSkillsWrapper {
+  background-color: lightgray;
+  font-size: 10px;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+  display: grid;
+  grid: 1fr/ 1fr 0.2fr;
+}
+
+.selectedSecSkillsMaster {
+  display: grid;
+  grid: 1fr/ 1fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.selectedSecSkillsWrapper button {
+  transition: 0.2s;
+  border: 0px;
+  border-radius: 4px;
+}
+.selectedSecSkillsWrapper button:hover {
+  background-color: var(--color-pink);
+  color: white;
+}
+/* MATRIX UNIT STYLING */
+.matrixContainer {
+  border-right: 3px;
+  border-color: var(--color-pink);
+  display: grid;
+  justify-content: center;
+  grid: 1fr 0.4fr 0.5fr 1fr 1fr 1fr 1fr / 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "titMat titMat titMat titMat titMat"
+    "catDrop catDrop catDrop clearCTA clearCTA"
+    ". priceLabel priceLabel priceLabel priceLabel"
+    "skillLabel matrixGrid matrixGrid matrixGrid matrixGrid"
+    "skillLabel matrixGrid matrixGrid matrixGrid matrixGrid"
+    "skillLabel matrixGrid matrixGrid matrixGrid matrixGrid"
+    "skillLabel matrixGrid matrixGrid matrixGrid matrixGrid";
+}
+.titleMatrix {
+  grid-area: titMat;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  align-self: center;
+}
+.clearCTA {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  grid-area: clearCTA;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.categoryDropdown {
+  grid-area: catDrop;
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+}
+.priceLabelContainer {
+  display: grid;
+  grid: 1fr/ 1fr 1fr 1fr 1fr;
+  grid-area: priceLabel;
+  align-self: end;
+  text-align: center;
+  color: var(--text-grey);
+  font-weight: 700;
+  font-size: 17px;
+}
+.skillLabelsContainer {
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr/ 1fr;
+  grid-area: skillLabel;
+  text-align: end;
+  padding-right: 10px;
+  justify-content: center;
+}
+
+.skillLabelsContainer span {
+  align-self: center;
+  color: var(--text-grey);
+  font-weight: 700;
+  font-size: 17px;
+}

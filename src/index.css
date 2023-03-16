@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-family: "Montserrat";
+
+  --color-bg: #f4f4f4;
+  --color-pink: #19b9e9;
+  --color-lightPink: #84e5f8;
+  --color-bgPink: #eef1f1;
+
+  --text-white: #ffffff;
+  --text-lightGrey: #e7e7e7;
+  --text-grey: #9e9e9e;
+}
+
+/* ORIGINAL COLOR */
+/* --color-bg: #f4f4f4;
+--color-pink: #e91949;
+--color-lightPink: #f8849f;
+--color-bgPink: #f1eeee; */
+
+/* LIME COLOR */
+/* --color-bg: #f4f4f4;
+--color-pink: #b9e919;
+--color-lightPink: #eef884;
+--color-bgPink: #f0f1ee; */

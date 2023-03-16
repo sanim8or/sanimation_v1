@@ -1,0 +1,33 @@
+.topSpacer {
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+.prjTitleWrapper {
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 31px;
+  font-weight: 600;
+  padding: 40px 70px 40px 70px;
+}
+.projImageHolder {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.projImage {
+  display: flex;
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 700px;
+  overflow: hidden;
+  background-size: cover;
+  align-items: center;
+}

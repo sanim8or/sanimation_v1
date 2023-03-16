@@ -1,0 +1,27 @@
+.storyContentContainer {
+  display: grid;
+  gap: 30px;
+  margin-top: 60px;
+  text-align: center;
+  padding: 0px 60px;
+  padding-bottom: 40px;
+}
+
+.rectangleFilled {
+  border: 5px;
+  border-color: black;
+}
+
+.closureCTAtext {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-pink);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.rightalign {
+  text-align: end;
+}

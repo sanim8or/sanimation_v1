@@ -1,0 +1,18 @@
+.titleText {
+  display: inline;
+  font-weight: 800;
+  font-size: 48px;
+  margin-left: 10px;
+}
+
+.dotText {
+  display: inline;
+  font-weight: 800;
+  font-size: 48px;
+  color: var(--color-pink);
+}
+
+.backIMG:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}

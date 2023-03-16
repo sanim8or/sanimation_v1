@@ -1,0 +1,131 @@
+.foot_master {
+  display: grid;
+  grid: 1fr/ 0.3fr 2.5fr 0.3fr;
+  grid-template-areas: ". footergrid .";
+  padding: 1.5rem;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bgPink);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.26);
+  z-index: -3;
+  overflow: hidden;
+}
+
+.footer {
+  display: grid;
+  position: relative;
+  grid-area: footergrid;
+  grid: 1fr 2fr 1fr 1fr/ 1fr;
+  grid-template-areas:
+    "tag"
+    "list"
+    "connect"
+    "rights";
+
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
+/* FOOTER TAG CSS -------------------------- */
+.footer-tagHolder {
+  font-size: 27pt;
+  text-transform: uppercase;
+  grid-area: tag;
+}
+
+.pinkyWord {
+  color: var(--color-pink);
+}
+
+.boldBottomText {
+  font-weight: 800;
+}
+/* ----------------------------------- */
+
+/* Catergory Wrapper -------------- */
+.categoryWrapper {
+  grid-area: list;
+  display: grid;
+  grid: 1fr/ 1fr 1fr 1fr 1fr 1fr;
+}
+.bottom-link-head {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.bottom-link-head:hover {
+  color: var(--color-pink);
+  font-weight: 600;
+}
+
+.bottom-link-body {
+  color: var(--color-pink);
+  font-weight: 400;
+  font-size: 11px;
+}
+.bottom-link-body:hover {
+  text-decoration: underline;
+}
+
+.bottom-link-head-wrapper {
+  text-align: center;
+  align-items: center;
+  margin-right: 15;
+}
+/* ------------------------------- */
+
+.contactUs-container {
+  grid-area: connect;
+  display: grid;
+  grid: 1fr/ 0.2fr 1fr;
+
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contactUs-det-wrapper {
+  display: grid;
+  grid: 1fr 1fr/ 1fr;
+  gap: 5px;
+
+  font-size: 13px;
+  color: var(--color-pink);
+  text-transform: none;
+}
+
+.contactUs-details:hover {
+  text-decoration: underline;
+}
+
+.copyright-text {
+  grid-area: rights;
+  font-weight: 500;
+  color: var(--color-pink);
+  font-size: 11px;
+  text-align: center;
+}
+
+.ArrowimageReserve {
+  /* background-color: var(--color-pink); */
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 350px;
+  /* transform: translateX(300px); */
+  position: absolute;
+  /* opacity: 0.1; */
+  transition: 1s;
+  pointer-events: none;
+}
+.imgFooter {
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}

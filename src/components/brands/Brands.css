@@ -1,0 +1,25 @@
+.masterWrapper {
+  display: flex;
+  height: 9rem;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  /* background-color: black; */
+  /* background: -webkit-linear-gradient(black, var(--color-bg)); */
+}
+
+.clientLogo {
+  margin: 2rem;
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  object-fit: contain;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.clientLogo:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
