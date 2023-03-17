@@ -9,12 +9,15 @@ import logoWhite from "../../../assets/svgs/Logo-Unit-white.svg";
 import navbarList from "../../../assets/Data/navbarArray";
 import { Link, useLocation, matchPath } from "react-router-dom";
 
-const NavbarButton = ({ item }) => {
+const NavbarButton = ({ item, solidPink }) => {
   const hasContent = item.content;
   return (
     <>
-      <Link to={item.url} className="san__navbar-links_container">
-        <p>{item.title}</p>
+      <Link to={item.url} className={"san__navbar-links_container"}>
+        <p className={solidPink ? "whiteMaker transp" : "titlePara"}>
+          {item.title}
+        </p>
+        <div className={`underlineNavbar ${solidPink ? "whiteMaker" : null}`} />
         {hasContent ? (
           <div className="dropContainer--animated">
             {item.content.map((subItem, index) => {
@@ -69,6 +72,7 @@ const Navbar = () => {
           .filter((item) => !item.hidden) // <-- this creates a new array with only the items that have hidden: false
           .map((item, index) => (
             <NavbarButton
+              solidPink={solidPink}
               key={index}
               item={item}
               className="san__navbar-links_container"

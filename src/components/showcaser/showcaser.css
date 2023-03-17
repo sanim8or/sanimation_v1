@@ -61,14 +61,17 @@
   transform: translateY(0px);
 }
 .imgHolder {
+  display: flex;
+  align-self: center;
+  justify-self: center;
   top: 0;
   left: 0;
   position: absolute;
   z-index: -5;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
   border-radius: 10px;
-  background-size: cover;
   transition: 1s;
 }
 .projectContainer-itemMaster:hover .imgHolder {

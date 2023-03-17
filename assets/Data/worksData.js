@@ -1,4 +1,4 @@
-import { demo } from "../images/projects/index";
+import { demo, wrongTown } from "../images/projects/index";
 
 export const projArray = [
   {
@@ -16,9 +16,10 @@ export const projArray = [
   },
   {
     id: 3,
-    client: "CCCCCC",
-    prName: "Foxtro Promo",
-    service: ["3D Animation", "Motion Graphics", "Branding"],
+    client: "Sanimation",
+    img: wrongTown,
+    prName: "Town",
+    service: ["3D Animation"],
   },
   {
     id: 4,
