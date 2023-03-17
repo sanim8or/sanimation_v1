@@ -4,13 +4,13 @@ import "./BackCTA.css";
 
 import backArrowSVG from "../../../assets/svgs/back.svg";
 
-const BackCTA = ({ title, url }) => {
+const BackCTA = ({ title, url, whiteT }) => {
   return (
     <div>
       <Link to={url}>
         <img src={backArrowSVG} className="backIMG" />
       </Link>
-      <p className="titleText">{title}</p>
+      <p className={`titleText ${whiteT ? "whiteTitle" : null}`}>{title}</p>
       <p className="dotText">.</p>
     </div>
   );

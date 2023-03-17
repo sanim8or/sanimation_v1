@@ -10,7 +10,7 @@
 
 .navbarRegion {
   height: 150px;
-  background-color: rgb(130, 238, 162);
+  /* background-color: rgb(130, 238, 162); */
 }
 .workPageHeader {
   display: grid;

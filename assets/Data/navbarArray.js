@@ -2,7 +2,6 @@ const navbarList = [
   {
     hidden: false,
     title: "Services",
-    url: "/services",
     content: [
       {
         con_title: "Social Media Animation",

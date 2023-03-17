@@ -7,12 +7,17 @@ import { OurWorkPage } from "../../../assets/Data/navbarArray";
 import Showcaser from "../../components/showcaser/showcaser";
 
 const OurWorks = () => {
-  const [activeCat, setActiveCat] = useState("All");
+  const [activeCat, setActiveCat] = useState("all");
+  const [activeCatText, setActiveCatText] = useState("All");
 
   const toggleCat = (item) => {
-    if (activeCat == item.key || activeCat == item.title) {
-      setActiveCat("All");
-    } else setActiveCat(item.title);
+    if (activeCat == item.key) {
+      setActiveCat("all");
+      setActiveCatText("All");
+    } else {
+      setActiveCat(item.key);
+      setActiveCatText(item.title);
+    }
   };
 
   return (
@@ -42,7 +47,10 @@ const OurWorks = () => {
               ))}
             </div>
             <div className="projContainer">
-              <Showcaser condition={activeCat == "All" ? "" : activeCat} />
+              <Showcaser
+                titleText={activeCatText == "All" ? "" : activeCatText}
+                condition={activeCat == "all" ? "" : activeCat}
+              />
             </div>
           </div>
         </div>

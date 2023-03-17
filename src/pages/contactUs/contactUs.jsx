@@ -138,7 +138,7 @@ const ContactUs = () => {
     <div>
       <div className="contactUsPageHero">
         <div className="unitFirst">
-          <BackCTA title="Let's Connect" url="/" />
+          <BackCTA title="Let's Connect" url="/" whiteT={true} />
           <div className="redStroke" />
           <span className="underlyingText">
             Just fill out the form below and let's connect!

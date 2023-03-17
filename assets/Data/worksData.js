@@ -16,10 +16,10 @@ export const projArray = [
   },
   {
     id: 3,
-    client: "Sanimation",
+    client: " ",
     img: wrongTown,
     prName: "Town",
-    service: ["3D Animation"],
+    service: ["3d"],
   },
   {
     id: 4,

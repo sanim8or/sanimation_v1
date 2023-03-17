@@ -13,9 +13,7 @@
 }
 
 .gradNavBG {
-  /* background: -webkit-linear-gradient(var(--color-pink), transparent); */
   background: -webkit-linear-gradient(#055674ab, transparent);
-  /* background: -webkit-linear-gradient(#74051fab, transparent); */
 }
 
 .solidNavBG {
@@ -86,7 +84,7 @@
 }
 
 .san__navbar-links_container {
-  position: relative;
+  /* position: relative; */
   display: flex;
   height: 50%;
   flex-direction: row;
@@ -125,9 +123,9 @@
 .underlineNavbar {
   background-color: var(--color-pink);
   height: 3px;
-  width: 50%;
+  width: 60px;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   transform: scaleX(0);
   transition: 0.5s;
   text-shadow: 0 0 100px var(--color-pink);

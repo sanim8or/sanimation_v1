@@ -4,6 +4,7 @@ import { projArray } from "../../../assets/Data/worksData";
 import "./showcaser.css";
 
 import { dummy, dummyDark } from "../../../assets/images/projects/index";
+import { OurWorkPage } from "../../../assets/Data/navbarArray";
 
 const ProjectItem = ({ proj }) => {
   const [isHover, setIsHover] = useState(false);
@@ -25,7 +26,7 @@ const ProjectItem = ({ proj }) => {
   );
 };
 
-const Showcaser = ({ condition }) => {
+const Showcaser = ({ condition, titleText }) => {
   const [projList, setProjList] = useState(projArray);
   // if (condition !== "All") {
   //   setProjList(projArray.filter((i) => i.service.includes(condition)));
@@ -38,7 +39,7 @@ const Showcaser = ({ condition }) => {
 
   return (
     <div>
-      <div className="condition_Text">{condition}</div>
+      <div className="condition_Text">{titleText}</div>
       {projList.length > 0 ? (
         <div className="projectContainer-master">
           {projList.map((project, index) => {

@@ -16,3 +16,7 @@
   transition: 0.2s;
   transform: scale(1.2);
 }
+
+.whiteTitle {
+  color: white;
+}
