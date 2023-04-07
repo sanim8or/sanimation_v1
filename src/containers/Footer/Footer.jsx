@@ -77,8 +77,8 @@ const Footer = () => {
         </div>
 
         <div className="copyright-text">
-          &copy; Sanimation Studios &trade; {date}. Division of Three Fold
-          Visuals Pvt. Ltd.
+          &copy; Sanimation Studios &trade; {date}. Unit of Three Fold Visuals
+          Pvt. Ltd.
         </div>
       </div>
     </div>

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
-// import { ReactComponent as Folder } from "./folder.svg";
 import backArrowSVG from "../../../assets/svgs/back.svg";
 import backArrowSVGWhite from "../../../assets/svgs/back-white.svg";
-import logo from "../../../assets/svgs/Logo-Unit.svg";
-import logoWhite from "../../../assets/svgs/Logo-Unit-white.svg";
+import { logo, logoWhite } from "../../../assets/svgs/logoINDEX";
 import navbarList from "../../../assets/Data/navbarArray";
 import { Link, useLocation, matchPath } from "react-router-dom";
 
@@ -64,7 +62,16 @@ const Navbar = () => {
     <div className={`san__navbar ${!solidPink ? "gradNavBG" : "solidNavBG"}`}>
       <div className="san__navbar-links">
         <Link to="/" className="san__navbar-links_logo">
-          <img src={!solidPink ? logo : logoWhite} alt="logo" />
+          {/* <img src={!solidPink ? logo : logoWhite} alt="logo" /> */}
+          <img
+            style={{ width: "30%", minWidth: "150px" }}
+            src={
+              !solidPink
+                ? require("../../../assets/images/logo_white.png")
+                : require("../../../assets/images/logo_flatWhite.png")
+            }
+            alt="logo"
+          />
         </Link>
       </div>
       <div className="san__navbar-links2">

@@ -84,7 +84,6 @@
 }
 
 .san__navbar-links_container {
-  /* position: relative; */
   display: flex;
   height: 50%;
   flex-direction: row;
@@ -163,7 +162,6 @@
   background-color: transparent;
 }
 .nofill:hover .connectArrowNavbar {
-  /* transform: rotate(180deg) scale(1.5); */
   animation: rotateArrowSendAnim 2s ease-in-out infinite;
 }
 
@@ -186,19 +184,21 @@
   40% {
     transform: rotate(180deg) translateX(10px);
   }
+  45% {
+    opacity: 1;
+  }
   48% {
     transform: rotate(180deg) translateX(-90px);
+    opacity: 0;
   }
   48.01% {
+    opacity: 0;
     transform: rotate(180deg) translateX(90px);
   }
-  50% {
-    transform: rotate(180deg) translateX(10px);
-  }
   55% {
-    transform: rotate(180deg) translateX(5px);
+    opacity: 1;
   }
-  70% {
+  60% {
     transform: rotate(180deg) translateX(0px);
   }
 }

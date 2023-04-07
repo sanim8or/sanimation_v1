@@ -30,6 +30,10 @@ export const CardWrapper = ({ type, left }) => {
 };
 
 const Landing = () => {
+  // window.scroll({
+  //   top: 1000,
+  //   behavior: "smooth",
+  // });
   return (
     <div className="landing-grid-wrapper">
       <div className="HeroArea">

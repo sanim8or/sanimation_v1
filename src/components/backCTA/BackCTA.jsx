@@ -8,7 +8,7 @@ const BackCTA = ({ title, url, whiteT }) => {
   return (
     <div>
       <Link to={url}>
-        <img src={backArrowSVG} className="backIMG" />
+        <img src={backArrowSVG} className={`backIMG`} />
       </Link>
       <p className={`titleText ${whiteT ? "whiteTitle" : null}`}>{title}</p>
       <p className="dotText">.</p>

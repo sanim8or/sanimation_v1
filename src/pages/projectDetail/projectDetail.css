@@ -31,3 +31,17 @@
   background-size: cover;
   align-items: center;
 }
+.backCTAHolder-ProjectdetailsPage {
+  background-color: black;
+  padding-left: 25%;
+}
+.backCTAHolder-ProjectdetailsPage-scaleDown {
+  background-color: black;
+  transform: scale(0.4) translateX(-100%) translateY(100%);
+  cursor: pointer;
+  opacity: 0.32;
+  transition: 0.5s;
+}
+.backCTAHolder-ProjectdetailsPage-scaleDown:hover {
+  opacity: 1;
+}

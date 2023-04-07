@@ -20,3 +20,10 @@
 .whiteTitle {
   color: white;
 }
+.backCTAsmaller {
+  font-size: 20px;
+  transform: translateY(30px);
+}
+.backCTAsmallerTransformer {
+  transform: scale(0.7);
+}
